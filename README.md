@@ -1,0 +1,2 @@
+# DBProject_Group8_CampusEventManagementSystem
+Database Project CSA
