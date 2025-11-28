@@ -23,10 +23,9 @@ export default function Home() {
 
         <div className="hero-grid">
           <div>
-            <h1>Manage campus events with confidence</h1>
+            <h1>A powerful, intuitive dashboard for seamless campus event management.</h1>
             <p style={{ marginTop: 8 }}>
-              A modern, responsive dashboard inspired by SIMASTER UGM to handle registrations,
-              venues, and organizers—built to feel like a progressive web app.
+              Handle registrations, coordinate venues, and empower organizers all within a fast, app-like experience that works perfectly on any device.
             </p>
             <div className="actions-row" style={{ marginTop: 14 }}>
               <a className="cta-button" href="/registration">Open registrations</a>
@@ -35,21 +34,20 @@ export default function Home() {
             <div className="stats-row">
               <span className="pill">Live modules: {modules.length}</span>
               <span className="pill subtle">Optimized for mobile & desktop</span>
-              <span className="pill subtle">UGM-inspired colorway</span>
+              <span className="pill subtle">Everything stays in sync</span>
             </div>
           </div>
 
           <div className="list-item" style={{ alignSelf: "stretch" }}>
             <p className="eyebrow">Quick Glance</p>
-            <h3 style={{ marginTop: 6 }}>End-to-end control</h3>
+            <h3 style={{ marginTop: 6 }}>Your Event, Our Platform. Sorted.</h3>
             <p style={{ marginTop: 6 }}>
-              Navigate through all modules seamlessly. The layout is touch-friendly,
-              keyboard-friendly, and adapts to any screen.
+              From the first idea to the final headcount, manage your entire campus event in one simple, powerful tool.
             </p>
             <div className="list" style={{ marginTop: 12 }}>
-              <div className="tag">Mobile-first grid</div>
-              <div className="tag">Glassmorphism panels</div>
-              <div className="tag">Bold UGM yellow accents</div>
+              <div className="tag">Submit your event proposal to campus offices in minutes.</div>
+              <div className="tag">See your approval status and get notifications instantly.</div>
+              <div className="tag">Create event pages and share them across campus with a link.</div>
             </div>
           </div>
         </div>
