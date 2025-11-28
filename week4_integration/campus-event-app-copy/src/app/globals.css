@@ -135,6 +135,7 @@ p {
   background: rgba(255, 255, 255, 0.03);
 }
 
+/* Input and select base styles */
 input, select {
   width: 100%;
   padding: 10px 12px;
@@ -143,11 +144,85 @@ input, select {
   background: rgba(255, 255, 255, 0.04);
   color: var(--text);
   outline: none;
+  font-family: inherit;
+  font-size: 14px;
 }
 
 input:focus, select:focus {
   border-color: rgba(244, 180, 0, 0.7);
   box-shadow: 0 0 0 2px rgba(244, 180, 0, 0.15);
+}
+
+/* Enhanced dropdown/select styling */
+select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239DB0D0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+select:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Style options for dark theme */
+select option {
+  background: var(--bg-2);
+  color: var(--text);
+  border: none;
+  padding: 12px;
+}
+
+select option:checked {
+  background: rgba(244, 180, 0, 0.2);
+  color: var(--text);
+}
+
+select option:hover {
+  background: rgba(244, 180, 0, 0.1);
+}
+
+/* For disabled state */
+select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Custom styling for different sizes */
+select.small {
+  padding: 8px 10px;
+  padding-right: 36px;
+  font-size: 13px;
+}
+
+select.large {
+  padding: 12px 14px;
+  padding-right: 44px;
+  font-size: 15px;
+}
+
+/* Additional utility class for dropdown containers */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-container::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239DB0D0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center;
 }
 
 button {
